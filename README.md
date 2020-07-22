@@ -24,6 +24,7 @@ There is a driver program in `./simulator.py`, which instantiates a bulldozer, a
 After each command, the updated site plan is printed out on the screen so that the user knows what the result of the previous action on the site map was.
 
 **Notes**:
+
 •	A square block that is cleared is shown by ‘*’ on the screen.
 
 •	Square blocks that contain protected trees are considered as non-clearable blocks.
