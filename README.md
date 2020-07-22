@@ -10,15 +10,6 @@ git clone https://github.com/shahramatuber/oracle_simulator.git
 
 Instructions on how to install python 3 can be found [here](https://realpython.com/installing-python/)
 
-# Running Unit Tests
-If you would like to run all the test at once, run the following command from repository root diretory:
-
-`py.test`
-
-If you want to run tests of a specific file, run the command above and specidy the file path. For example:
-
-`py.test ./test/expense.py`
-
 # Design 
 This project consists of 3 main classes:
 
@@ -28,9 +19,18 @@ This project consists of 3 main classes:
 
 3- Bulldozer class which is defined in `./core/bulldozer.py` and represents a bulldozer. An object of SiteMap and Expense classes is created as member variables of Bulldozer objects. At each step, the bulldozer receives a command, updates its location, clears the land if possible, and updates the cost of operation in its expense member variable. It also keeps track of all the commands it has received since the beginning of simulation.
 
-There is a driver program in `./simulator.py`, which instanciates a bulldozer, and sends commands to the bulldozer until user quits, or the bulldozer hits a protected tree, or the bulldozer goes out of the site map. Any of those terminating actions will end the simulation and will generate a report of all the commands and per-item and total cost of the executed commands. 
+There is a driver program in `./simulator.py`, which instantiates a bulldozer, and sends commands to the bulldozer until user quits, or the bulldozer hits a protected tree, or the bulldozer goes out of the site map. Any of those terminating actions will end the simulation and will generate a report of all the commands and per-item and total cost of the executed commands. 
 
-After each command, the updated site plan is printed out on the screen so the the user knows what the result of the previous action on the site map was.
+After each command, the updated site plan is printed out on the screen so that the user knows what the result of the previous action on the site map was.
+
+# Running Unit Tests
+If you would like to run all the test at once, run the following command from repository root diretory:
+
+`py.test`
+
+If you want to run tests of a specific file, run the command above and specify the file path. For example:
+
+`py.test ./test/expense.py`
 
 # Usage
 Run the following command from the repository root directory:
