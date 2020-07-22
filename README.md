@@ -23,6 +23,16 @@ There is a driver program in `./simulator.py`, which instantiates a bulldozer, a
 
 After each command, the updated site plan is printed out on the screen so that the user knows what the result of the previous action on the site map was.
 
+**Notes**:
+•	A square block that is cleared is shown by ‘*’ on the screen.
+
+•	Square blocks that contain protected trees are considered as non-clearable blocks.
+
+•	If bulldozer passes through a removable tree without stopping on it, a paint damage cost will be considered. However, if it has a stop on it, paint damage is not considered.
+
+•	According to the example provided in the problem description, quit command is considered to have zero cost of communication overhead.
+
+
 # Running Unit Tests
 If you would like to run all the test at once, run the following command from repository root diretory:
 
