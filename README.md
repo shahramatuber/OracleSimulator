@@ -12,9 +12,11 @@ Instructions on how to install python 3 can be found [here](https://realpython.c
 
 # Running Unit Tests
 If you would like to run all the test at once, run the following command from repository root diretory:
+
 `py.test`
 
 If you want to run tests of a specific file, run the command above and specidy the file path. For example:
+
 `py.test ./test/expense.py`
 
 # Design 
