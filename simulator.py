@@ -22,7 +22,7 @@ def readNextCommand():
   Reads the user command. Accepts both lowercase and uppercase
   """
   command = input("(l)eft, (r)ight, (a)dvance <n>, (q)uit: ")
-  return command.lower()
+  return command.strip().lower()
 
 def isValid(commandStr):
   """
